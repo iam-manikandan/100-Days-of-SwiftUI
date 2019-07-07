@@ -9,17 +9,21 @@
 import SwiftUI
 
 struct ContentView : View {
+
+    @ObjectBinding var dataSource = DataSource()
+
     var body: some View {
         NavigationView {
-            List {
+            List(dataSource.pictures.identified(by: \.self)) { image in
                 HStack {
-                    Image("island").resizable()
+                    Image("Landscape - \(image)")
+                        .resizable()
                         .frame(width: 80, height: 80, alignment: .center)
                         .shadow(radius: 5)
                     VStack(alignment: .leading) {
-                        Text("Beatiful Landscape")
+                        Text(image)
                             .font(.title)
-                        Text("beach")
+                        Text("It's a beatiful landscape")
                             .font(.subheadline)
                     }
                     Spacer()
