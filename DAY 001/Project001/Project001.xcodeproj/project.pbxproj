@@ -13,7 +13,7 @@
 		0A4B219722D1A54E0000901F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4B219622D1A54E0000901F /* Assets.xcassets */; };
 		0A4B219A22D1A54E0000901F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4B219922D1A54E0000901F /* Preview Assets.xcassets */; };
 		0A4B219D22D1A54E0000901F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4B219B22D1A54E0000901F /* LaunchScreen.storyboard */; };
-		0AC3473C22D1B48100569038 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3473B22D1B48100569038 /* Data.swift */; };
+		0AC3473C22D1B48100569038 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3473B22D1B48100569038 /* DataSource.swift */; };
 		0AC3475A22D1BB5000569038 /* Landscape - Desert.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3473E22D1BB5000569038 /* Landscape - Desert.png */; };
 		0AC3475B22D1BB5000569038 /* Landscape - Trees.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3473F22D1BB5000569038 /* Landscape - Trees.png */; };
 		0AC3475C22D1BB5000569038 /* Landscape - Cityscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3474022D1BB5000569038 /* Landscape - Cityscape.png */; };
@@ -42,6 +42,7 @@
 		0AC3477322D1BB5000569038 /* Landscape - Windmills.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3475722D1BB5000569038 /* Landscape - Windmills.png */; };
 		0AC3477422D1BB5000569038 /* Landscape - Iceberg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3475822D1BB5000569038 /* Landscape - Iceberg.png */; };
 		0AC3477522D1BB5000569038 /* Landscape - Ruins.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC3475922D1BB5000569038 /* Landscape - Ruins.png */; };
+		0AC3477722D1C75E00569038 /* ContentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC3477622D1C75E00569038 /* ContentDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +54,7 @@
 		0A4B219922D1A54E0000901F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A4B219C22D1A54E0000901F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A4B219E22D1A54E0000901F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AC3473B22D1B48100569038 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		0AC3473B22D1B48100569038 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		0AC3473E22D1BB5000569038 /* Landscape - Desert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Landscape - Desert.png"; sourceTree = "<group>"; };
 		0AC3473F22D1BB5000569038 /* Landscape - Trees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Landscape - Trees.png"; sourceTree = "<group>"; };
 		0AC3474022D1BB5000569038 /* Landscape - Cityscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Landscape - Cityscape.png"; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 		0AC3475722D1BB5000569038 /* Landscape - Windmills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Landscape - Windmills.png"; sourceTree = "<group>"; };
 		0AC3475822D1BB5000569038 /* Landscape - Iceberg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Landscape - Iceberg.png"; sourceTree = "<group>"; };
 		0AC3475922D1BB5000569038 /* Landscape - Ruins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Landscape - Ruins.png"; sourceTree = "<group>"; };
+		0AC3477622D1C75E00569038 /* ContentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +119,8 @@
 				0A4B219022D1A54C0000901F /* AppDelegate.swift */,
 				0A4B219222D1A54C0000901F /* SceneDelegate.swift */,
 				0A4B219422D1A54C0000901F /* ContentView.swift */,
-				0AC3473B22D1B48100569038 /* Data.swift */,
+				0AC3477622D1C75E00569038 /* ContentDetail.swift */,
+				0AC3473B22D1B48100569038 /* DataSource.swift */,
 				0AC3473D22D1BB5000569038 /* Images */,
 				0A4B219622D1A54E0000901F /* Assets.xcassets */,
 				0A4B219B22D1A54E0000901F /* LaunchScreen.storyboard */,
@@ -269,8 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC3477722D1C75E00569038 /* ContentDetail.swift in Sources */,
 				0A4B219122D1A54C0000901F /* AppDelegate.swift in Sources */,
-				0AC3473C22D1B48100569038 /* Data.swift in Sources */,
+				0AC3473C22D1B48100569038 /* DataSource.swift in Sources */,
 				0A4B219322D1A54C0000901F /* SceneDelegate.swift in Sources */,
 				0A4B219522D1A54C0000901F /* ContentView.swift in Sources */,
 			);

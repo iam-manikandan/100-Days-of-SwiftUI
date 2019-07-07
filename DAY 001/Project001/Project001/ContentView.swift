@@ -14,20 +14,24 @@ struct ContentView : View {
 
     var body: some View {
         NavigationView {
-            List(dataSource.pictures.identified(by: \.self)) { image in
-                HStack {
-                    Image("Landscape - \(image)")
-                        .resizable()
-                        .frame(width: 80, height: 80, alignment: .center)
-                        .shadow(radius: 5)
-                    VStack(alignment: .leading) {
-                        Text(image)
-                            .font(.title)
-                        Text("It's a beatiful landscape")
-                            .font(.subheadline)
+            List(dataSource.pictures.identified(by: \.self)) { picture in
+
+                NavigationLink(destination: ContentDetail(titleName: picture)) {
+                    HStack {
+                        Image("Landscape - \(picture)")
+                            .resizable()
+                            .frame(width: 80, height: 80, alignment: .center)
+                            .shadow(radius: 5)
+                        VStack(alignment: .leading) {
+                            Text(picture)
+                                .font(.title)
+                            Text("It's a beatiful landscape")
+                                .font(.subheadline)
+                        }
+                        Spacer()
                     }
-                    Spacer()
                 }
+
             }
             .navigationBarTitle("Landscapes")
         }
