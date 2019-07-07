@@ -16,12 +16,13 @@ struct ContentDetail : View {
         VStack {
             Image("Landscape - \(titleName)")
                 .resizable()
-                .scaledToFit()
+                .aspectRatio(contentMode: .fit)
                 .overlay(Circle().stroke(Color.white, lineWidth: 4))
                 .shadow(radius: 10)
-            .padding()
+                .padding()
             Text(titleName)
                 .font(.title)
+            Spacer()
         }
     }
 }
