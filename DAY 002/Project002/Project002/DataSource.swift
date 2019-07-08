@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-let descriptions = [Description(songName: "Grenade", albumName: "Doo-Wops & Hooligans"),
+let songDescriptions = [Description(songName: "Grenade", albumName: "Doo-Wops & Hooligans"),
                     Description(songName: "Just The Way You Are", albumName: "Doo-Wops & Hooligans"),
                     Description(songName: "Young Girls", albumName: "Unorthodox Jukebox"),
                     Description(songName: "Count On Me", albumName: "Doo-Wops & Hooligans"),
@@ -36,8 +36,8 @@ let descriptions = [Description(songName: "Grenade", albumName: "Doo-Wops & Hool
                     Description(songName: "Locked Out Of Heaven", albumName: "Unorthodox Jukebox"),
                     Description(songName: "Liquor Store Blues", albumName: "Doo-Wops & Hooligans"),
                     Description(songName: "Somewhere In Brooklyn", albumName: "Doo-Wops & Hooligans"),
-                    Description(songName: "Perm", albumName: "24K Magic")
-]
+                    Description(songName: "Perm", albumName: "24K Magic")]
+
 
 struct Description {
     var songName : String

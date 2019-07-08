@@ -9,8 +9,26 @@
 import SwiftUI
 
 struct AlbumsView : View {
+
+    let albumDescriptions = ["Doo-Wops & Hooligans", "Unorthodox Jukebox", "24K Magic"]
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(albumDescriptions.identified(by: \.self)) { albumDescription in
+                HStack {
+                    Image(albumDescription)
+                        .resizable()
+                        .frame(width: 100, height: 100, alignment: .center)
+                        .clipShape(Circle())
+                        .shadow(radius: 5)
+                        .padding()
+                    Text(albumDescription)
+                        .font(.headline)
+                        .padding(2)
+                }
+                .navigationBarTitle("Albums")
+            }
+        }
     }
 }
 

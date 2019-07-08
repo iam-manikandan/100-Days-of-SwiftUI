@@ -10,26 +10,21 @@ import SwiftUI
 
 struct ContentView : View {
     var body: some View {
-        NavigationView {
-            List(descriptions.identified(by: \.songName)) { dess in
-                HStack {
-                    Image(dess.albumName)
-                        .resizable()
-                        .frame(width: 60, height: 60, alignment: .center)
-                        .clipShape(Circle())
-                        .shadow(radius: 5)
-                    VStack (alignment: .leading) {
-                        Text(dess.songName)
-                            .font(.headline)
-                        Text(dess.albumName)
-                            .font(.subheadline)
-                    }
-                }
+        TabbedView {
+            SongsView()
+            .tabItem {
+                Image(systemName: "music.note")
+                Text("Songs")
             }
-            .navigationBarTitle("Bruno Mars")
+            .tag(0)
+           AlbumsView()
+            .tabItem {
+                Image(systemName: "rectangle.stack")
+                Text("Albums")
+            }
+            .tag(1)
         }
     }
-    
 }
 
 #if DEBUG

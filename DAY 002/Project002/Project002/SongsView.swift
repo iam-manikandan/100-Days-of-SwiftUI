@@ -10,7 +10,26 @@ import SwiftUI
 
 struct SongsView : View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(songDescriptions.identified(by: \.songName)) { songDescription in
+                HStack {
+                    Image(songDescription.albumName)
+                        .resizable()
+                        .frame(width: 60, height: 60, alignment: .center)
+                        .clipShape(Circle())
+                        .shadow(radius: 5)
+                        .padding()
+                    VStack (alignment: .leading) {
+                        Text(songDescription.songName)
+                            .font(.headline)
+                            .padding(2)
+                        Text(songDescription.albumName)
+                            .font(.subheadline)
+                    }
+                }
+            }
+            .navigationBarTitle("Bruno Mars")
+        }
     }
 }
 
