@@ -20,12 +20,13 @@ class DataSource : BindableObject {
         if let path = Bundle.main.resourcePath, let items = try? fileManager.contentsOfDirectory(atPath: path) {
 
             for item in items {
-                if item.hasPrefix("Landscape") {
+                if item.hasPrefix("Landscape -") {
                     let imageName = String(item.dropLast(4))
                     let titleName = imageName.dropFirst(12)
                     pictures.append(String(titleName))
                 }
             }
+            print(pictures)
         }
         didChange.send(())
     }

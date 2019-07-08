@@ -14,7 +14,7 @@ struct ContentDetail : View {
 
     var body: some View {
         VStack {
-            Image("Landscape - \(titleName)")
+            Image(uiImage: UIImage(named: "Landscape - \(titleName)")!)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .overlay(Circle().stroke(Color.white, lineWidth: 4))

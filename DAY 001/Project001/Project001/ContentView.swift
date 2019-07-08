@@ -18,8 +18,8 @@ struct ContentView : View {
 
                 NavigationLink(destination: ContentDetail(titleName: picture)) {
                     HStack {
-                        Image("Landscape - \(picture)")
-                            .resizable()
+                        Image(uiImage: UIImage(named: "Landscape - \(picture)")!)
+                           .resizable()
                             .frame(width: 80, height: 80, alignment: .center)
                             .shadow(radius: 5)
                         VStack(alignment: .leading) {
@@ -34,7 +34,7 @@ struct ContentView : View {
 
             }
             .navigationBarTitle("Landscapes")
-        }
+        }.navigationViewStyle(.stack)
     }
 }
 
