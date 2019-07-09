@@ -9,15 +9,39 @@
 import SwiftUI
 
 struct PlayView : View {
+
+    var songName : String
+    var albumName : String
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(songName)
+                .font(.headline)
+                .padding(.top)
+
+            Text(albumName)
+                .padding(.bottom)
+
+            HStack {
+                Image(systemName: "backward.fill")
+                Spacer()
+                Image(systemName: "pause.fill")
+                    .font(.title)
+                Spacer()
+                Image(systemName: "forward.fill")
+            }
+            .padding(.horizontal, 22)
+            Spacer()
+            Image(systemName: "volume.2.fill")
+                .font(.title)
+        }
     }
 }
 
 #if DEBUG
 struct PlayView_Previews : PreviewProvider {
     static var previews: some View {
-        PlayView()
+        PlayView(songName: "Grenade", albumName: "Doo-Wops & Hooligans")
     }
 }
 #endif
