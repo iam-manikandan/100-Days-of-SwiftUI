@@ -16,6 +16,8 @@
 		0A70A42822D4CD9800578A5F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70A42722D4CD9800578A5F /* ExtensionDelegate.swift */; };
 		0A70A42A22D4CD9900578A5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A70A42922D4CD9900578A5F /* Assets.xcassets */; };
 		0A70A42D22D4CD9900578A5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A70A42C22D4CD9900578A5F /* Preview Assets.xcassets */; };
+		0A70A43D22D4CE2500578A5F /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70A43C22D4CE2500578A5F /* DataSource.swift */; };
+		0AA8C8C122D4DA3F003B0A3B /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8C8C022D4DA3F003B0A3B /* PlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		0A70A42922D4CD9900578A5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A70A42C22D4CD9900578A5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A70A42E22D4CD9900578A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A70A43C22D4CE2500578A5F /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		0AA8C8C022D4DA3F003B0A3B /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				0A70A42322D4CD9800578A5F /* ContentView.swift */,
+				0AA8C8C022D4DA3F003B0A3B /* PlayView.swift */,
+				0A70A43C22D4CE2500578A5F /* DataSource.swift */,
 				0A70A42522D4CD9800578A5F /* HostingController.swift */,
 				0A70A42722D4CD9800578A5F /* ExtensionDelegate.swift */,
 				0A70A42922D4CD9900578A5F /* Assets.xcassets */,
@@ -266,6 +272,8 @@
 			files = (
 				0A70A42622D4CD9800578A5F /* HostingController.swift in Sources */,
 				0A70A42422D4CD9800578A5F /* ContentView.swift in Sources */,
+				0A70A43D22D4CE2500578A5F /* DataSource.swift in Sources */,
+				0AA8C8C122D4DA3F003B0A3B /* PlayView.swift in Sources */,
 				0A70A42822D4CD9800578A5F /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
